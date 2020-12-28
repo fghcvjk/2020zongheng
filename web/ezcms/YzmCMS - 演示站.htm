@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	  <title>YzmCMS - 演示站</title>
+	  <meta name="author" content="YzmCMS内容管理系统">
+	  <meta name="keywords" content="yzmcms,YzmCMS演示站,开源cms,cms系统">
+	  <meta name="description" content="YzmCMS是一款基于YZMPHP开发的一套轻量级开源内容管理系统，YzmCMS简洁、安全、开源、实用，可运行在Linux、Windows、MacOSX、Solaris等各种平台上，专注为公司企业、个人站长快速建站提供解决方案。">
+	  <link rel="stylesheet" type="text/css" href="YzmCMS%20-%20%E6%BC%94%E7%A4%BA%E7%AB%99_files/swiper.css">
+	  <link href="YzmCMS%20-%20%E6%BC%94%E7%A4%BA%E7%AB%99_files/yzm-common.css" rel="stylesheet" type="text/css">
+	  <link href="YzmCMS%20-%20%E6%BC%94%E7%A4%BA%E7%AB%99_files/yzm-style.css" rel="stylesheet" type="text/css">
+	  <script type="text/javascript" src="YzmCMS%20-%20%E6%BC%94%E7%A4%BA%E7%AB%99_files/jquery-1.js"></script>
+	  <script type="text/javascript" src="YzmCMS%20-%20%E6%BC%94%E7%A4%BA%E7%AB%99_files/yzm-front.js"></script>
+	  <script type="text/javascript" src="YzmCMS%20-%20%E6%BC%94%E7%A4%BA%E7%AB%99_files/swiper.js"></script>
+	  <meta http-equiv="mobile-agent" content="format=xhtml;url=http://localhost/index.php?m=mobile">
+      <script type="text/javascript">
+      	if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="http://localhost/index.php?m=mobile";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}
+      </script>
+  </head>
+  <body>
+	   <!--网站头部-->
+<div class="yzm-header-box">
+	<div class="yzm-header-top">
+		<div class="yzm-member-status">
+				<a href="http://eci-2ze9kzucnjo3dmsw9leq.cloudeci1.ichunqiu.com/member/index/register.html" target="_blank">注册</a> 
+		<a href="http://eci-2ze9kzucnjo3dmsw9leq.cloudeci1.ichunqiu.com/member/index/login.html?referer=http%3A%2F%2Feci-2ze9kzucnjo3dmsw9leq.cloudeci1.ichunqiu.com%2F" target="_blank" class="login">登录</a>
+				</div>
+		<div class="topleft">
+			轻量级开源内容管理系统：<a href="https://www.yzmcms.com/" target="_blank">YzmCMS官方网站</a>
+		</div>
+	</div>
+</div>
+<div class="yzm-container-box">
+	<div class="yzm-header">
+		<div class="yzm-logo">
+		 <a href="http://eci-2ze9kzucnjo3dmsw9leq.cloudeci1.ichunqiu.com/">YzmCMS内容管理系统</a>
+		 <!-- <a href="http://eci-2ze9kzucnjo3dmsw9leq.cloudeci1.ichunqiu.com/"><img src="http://eci-2ze9kzucnjo3dmsw9leq.cloudeci1.ichunqiu.com/common/static/images/logo.png" title="YzmCMS - 演示站" alt="YzmCMS - 演示站"></a> -->
+		</div>
+		<div class="yzm-search">
+		<form method="get" action="http://eci-2ze9kzucnjo3dmsw9leq.cloudeci1.ichunqiu.com/search/index/init.html" target="_blank">
+			<div id="searchtxt" class="searchtxt">
+				<div class="searchmenu">	
+					<div class="searchselected" id="searchselected">全站</div>	
+					<div class="searchtab" id="searchtab">
+						<ul>
+							<li data="0">全站</li>
+							<li data="1">文章</li>
+							<li data="2">产品</li>
+							<li data="3">下载</li>
+						</ul>
+					</div>
+				</div>
+				<input type="hidden" name="modelid" value="0" id="modelid">
+				<input name="q" type="text" placeholder="输入关键字">
+			</div>
+			<div class="searchbtn">
+				<button id="searchbtn" type="submit">搜索</button>
+			</div>
+		</form>
+	    </div>
+		<div class="yzm-add-content"><a href="http://eci-2ze9kzucnjo3dmsw9leq.cloudeci1.ichunqiu.com/member/member_content/init.html" target="_blank">发布内容</a></div>
+	</div>
+
+	<!--网站导航-->
+	<div class="yzm-menu">
+	  <ul class="yzm-nav">
+		 <li><a class="current" href="http://eci-2ze9kzucnjo3dmsw9leq.cloudeci1.ichunqiu.com/">首页</a></li>
+						    <li>
+				<a href="http://eci-2ze9kzucnjo3dmsw9leq.cloudeci1.ichunqiu.com/xinwenzhongxin/" target="_self">新闻中心</a>
+				<!-- 这里是二级栏目的循环，不需要的可以删除，代码开始 -->
+				 
+								<ul class="sub_nav">
+										<li><a href="http://eci-2ze9kzucnjo3dmsw9leq.cloudeci1.ichunqiu.com/guanfangxinwen/">官方新闻</a></li>
+										<li><a href="http://eci-2ze9kzucnjo3dmsw9leq.cloudeci1.ichunqiu.com/qitaxinwen/">其他新闻</a></li>
+						
+				</ul>
+								<!-- 这里是二级栏目的循环，不需要的可以删除，代码结束 -->
+			</li>		
+				    <li>
+				<a href="http://eci-2ze9kzucnjo3dmsw9leq.cloudeci1.ichunqiu.com/guanyuwomen/" target="_self">关于我们</a>
+				<!-- 这里是二级栏目的循环，不需要的可以删除，代码开始 -->
+								<!-- 这里是二级栏目的循环，不需要的可以删除，代码结束 -->
+			</li>		
+				    <li>
+				<a href="http://www.yzmcms.com/" target="_blank">官方网站</a>
+				<!-- 这里是二级栏目的循环，不需要的可以删除，代码开始 -->
+								<!-- 这里是二级栏目的循环，不需要的可以删除，代码结束 -->
+			</li>		
+			
+	  </ul>
+	</div>
+</div>
+
+<!--网站容器-->
+<div class="yzm-container"> 
+		<div class="box">
+			<!-- 轮播图 开始 -->
+			<!-- 
+				这里并没有调用后台自带的轮播图，如果有需要请自行调用轮播图标签即可，
+				YzmCMS标签大全：https://blog.yzmcms.com/php/76.html 
+			-->
+			<div class="swiper-container yzm-banner swiper-container-initialized swiper-container-horizontal">
+				 <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-1520px, 0px, 0px);"><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="1" style="width: 760px;">
+				      	<a href="https://www.yzmcms.com/xiazai/" target="_blank">
+				      		<img src="YzmCMS%20-%20%E6%BC%94%E7%A4%BA%E7%AB%99_files/banner2.png" alt="YzmCMS内容管理系统" title="YzmCMS内容管理系统">
+				      	</a>
+				      </div>
+				      <div class="swiper-slide swiper-slide-prev swiper-slide-duplicate-next" data-swiper-slide-index="0" style="width: 760px;">
+				      	<a href="https://www.yzmcms.com/" target="_blank">
+				      		<img src="YzmCMS%20-%20%E6%BC%94%E7%A4%BA%E7%AB%99_files/banner1.png" alt="YzmCMS内容管理系统" title="YzmCMS内容管理系统">
+				      	</a>
+				      </div>
+				      <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="1" style="width: 760px;">
+				      	<a href="https://www.yzmcms.com/xiazai/" target="_blank">
+				      		<img src="YzmCMS%20-%20%E6%BC%94%E7%A4%BA%E7%AB%99_files/banner2.png" alt="YzmCMS内容管理系统" title="YzmCMS内容管理系统">
+				      	</a>
+				      </div>	
+				 <div class="swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev" data-swiper-slide-index="0" style="width: 760px;">
+				      	<a href="https://www.yzmcms.com/" target="_blank">
+				      		<img src="YzmCMS%20-%20%E6%BC%94%E7%A4%BA%E7%AB%99_files/banner1.png" alt="YzmCMS内容管理系统" title="YzmCMS内容管理系统">
+				      	</a>
+				      </div></div>
+				 <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 2"></span></div>
+				 <div class="yzm-button-next" tabindex="0" role="button" aria-label="Next slide"></div>
+				 <div class="yzm-button-prev" tabindex="0" role="button" aria-label="Previous slide"></div>
+
+			<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>	
+			<!-- 轮播图 结束 -->
+
+			<div class="yzm-content-box yzm-top-right">
+				<div class="yzm-title">
+					<h2>推荐文章</h2>
+				</div>
+				<ul class="yzm-ranking">
+					<!-- 此处为功能演示，调取内容属性为“推荐”的内容 -->
+																				   <li><em>1</em><span class="date">09-06</span><a href="http://eci-2ze9kzucnjo3dmsw9leq.cloudeci1.ichunqiu.com/guanfangxinwen/2.html" title="YzmCMS v5.8正式版发布" target="_blank"><span class="title_color" style="color:#ff0000">YzmCMS v5.8正式版发布</span></a></li>	
+															   <li><em>2</em><span class="date">05-15</span><a href="http://eci-2ze9kzucnjo3dmsw9leq.cloudeci1.ichunqiu.com/guanfangxinwen/1.html" title="YZMPHP轻量级开源框架 V2.0" target="_blank"><span class="title_color">YZMPHP轻量级开源框架 V2.0</span></a></li>	
+						
+				</ul>
+			</div>
+			
+			<div class="yzm-line"></div>
+			<div class="yzm-content-box yzm-text-thumbs">
+				<div class="yzm-title">
+					<h2>最近更新</h2> 
+				</div>
+				<!-- 此处仅为功能演示，不分栏目，调取模型ID(modelid)为1的所有内容 -->
+													<div class="yzm-text-thumb">
+						<a href="http://eci-2ze9kzucnjo3dmsw9leq.cloudeci1.ichunqiu.com/guanfangxinwen/2.html" class="yzm-text-thumbl">
+							<img src="YzmCMS%20-%20%E6%BC%94%E7%A4%BA%E7%AB%99_files/nopic.jpg" alt="YzmCMS v5.8正式版发布" title="YzmCMS v5.8正式版发布">
+						</a>
+						<div class="yzm-text-thumbr">
+							<a href="http://eci-2ze9kzucnjo3dmsw9leq.cloudeci1.ichunqiu.com/guanfangxinwen/2.html"><span class="title_color" style="color:#ff0000">YzmCMS v5.8正式版发布</span></a>
+							<p>产品说明：YzmCMS是一款轻量级开源内容管理系统，它采用OOP（面向对象）方式自主开发的框架。基于PHP+Mysql架构，并采用MVC框架式开发的一...</p>
+						</div>
+					</div>
+									<div class="yzm-text-thumb">
+						<a href="http://eci-2ze9kzucnjo3dmsw9leq.cloudeci1.ichunqiu.com/guanfangxinwen/1.html" class="yzm-text-thumbl">
+							<img src="YzmCMS%20-%20%E6%BC%94%E7%A4%BA%E7%AB%99_files/nopic.jpg" alt="YZMPHP轻量级开源框架 V2.0" title="YZMPHP轻量级开源框架 V2.0">
+						</a>
+						<div class="yzm-text-thumbr">
+							<a href="http://eci-2ze9kzucnjo3dmsw9leq.cloudeci1.ichunqiu.com/guanfangxinwen/1.html"><span class="title_color">YZMPHP轻量级开源框架 V2.0</span></a>
+							<p>简介：YZMPHP是一款免费开源的轻量级PHP框架，框架完全采用面向对象的设计思想，并且是基于MVC的三层设计模式。具有部署和应用及为简单、效...</p>
+						</div>
+					</div>
+					
+			</div>
+
+			<div class="yzm-line"></div>
+			<div class="yzm-content-box yzm-text-list yzm-index-50">
+				<div class="yzm-title">
+					<h2>新闻中心</h2>
+				</div>
+			    <ul>
+			    <!-- 此处仅为功能演示，调用栏目ID为1的内容 -->
+												   <li>
+				   	<span class="yzm-date">2020-09-06</span>
+				   	<a href="http://eci-2ze9kzucnjo3dmsw9leq.cloudeci1.ichunqiu.com/guanfangxinwen/2.html" title="YzmCMS v5.8正式版发布" target="_blank"><span class="title_color" style="color:#ff0000">YzmCMS v5.8正式版发布</span></a>
+				   </li>		
+								   <li>
+				   	<span class="yzm-date">2018-05-15</span>
+				   	<a href="http://eci-2ze9kzucnjo3dmsw9leq.cloudeci1.ichunqiu.com/guanfangxinwen/1.html" title="YZMPHP轻量级开源框架 V2.0" target="_blank"><span class="title_color">YZMPHP轻量级开源框架 V2.0</span></a>
+				   </li>		
+										
+				</ul>
+			</div>	
+			<div class="yzm-content-box yzm-text-list yzm-index-50">
+				<div class="yzm-title">
+					<h2>官方新闻</h2>
+				</div>
+			    <ul>
+			    <!-- 此处仅为功能演示，调用栏目ID为2的内容 -->
+												   <li>
+				   	<span class="yzm-date">2020-09-06</span>
+				   	<a href="http://eci-2ze9kzucnjo3dmsw9leq.cloudeci1.ichunqiu.com/guanfangxinwen/2.html" title="YzmCMS v5.8正式版发布" target="_blank"><span class="title_color" style="color:#ff0000">YzmCMS v5.8正式版发布</span></a>
+				   </li>		
+								   <li>
+				   	<span class="yzm-date">2018-05-15</span>
+				   	<a href="http://eci-2ze9kzucnjo3dmsw9leq.cloudeci1.ichunqiu.com/guanfangxinwen/1.html" title="YZMPHP轻量级开源框架 V2.0" target="_blank"><span class="title_color">YZMPHP轻量级开源框架 V2.0</span></a>
+				   </li>		
+										
+				</ul>
+			</div>	
+			<div class="yzm-line"></div>
+			<div class="yzm-advertise">
+				<!-- 自定义广告位：更改这里，请登录后台->系统管理->自定义配置 -->
+				<h1>免费又好用的CMS建站系统，就选YzmCMS!</h1>
+			</div>
+			<div class="yzm-line"></div>
+			<div class="yzm-content-box yzm-img-list">
+				<div class="yzm-title">
+					<h2>图文资讯</h2>
+				</div>
+			    <ul>
+			    <!-- 此处仅为功能演示，调用模型ID为1且有缩略图的内容 -->
+														
+				</ul>
+			</div>	
+
+			<div class="yzm-line"></div>
+			<div class="yzm-content-box yzm-tag">
+				<div class="yzm-title">
+					<h2>热门标签</h2>
+				</div>
+			    <ul>
+														
+				</ul>
+			</div>			  		  
+			<div class="yzm-line"></div>
+			<div class="yzm-content-box yzm-link">
+				<div class="yzm-title">
+					<h2>友情链接</h2>
+					<span class="yzm-title-right"><a href="http://eci-2ze9kzucnjo3dmsw9leq.cloudeci1.ichunqiu.com/link/index/init.html">&gt;&gt;申请友链</a></span>
+				</div>
+			    <ul>
+			    <!-- 为了YzmCMS的长久发展，请保留YzmCMS官方友情链接 -->
+												   <li><a href="http://bbs.yzmcms.com/" target="_blank">YzmCMS官方论坛</a></li>	
+								   <li><a href="http://www.yzmcms.com/" target="_blank">YzmCMS官方网站</a></li>	
+										
+				</ul>
+			</div>			  
+		</div>
+
+		<script type="text/javascript">
+			var swiper = new Swiper('.swiper-container', {
+				loop : true,
+				centeredSlides: true,
+				autoplay: {
+					delay: 3500,
+					disableOnInteraction: false
+				},
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true
+				},
+				navigation: {
+					nextEl: '.yzm-button-next',
+					prevEl: '.yzm-button-prev',
+				},
+			});
+		</script>
+		
+		    </div>
+    <div class="clearfix"></div>
+	<div class="yzm-container-box yzm-footer">
+		<div>
+			<!-- 为了支持YzmCMS的发展,请您保留YzmCMS内容管理系统的链接信息,谢谢! -->
+			<p>京ICP备666666号  <a href="http://eci-2ze9kzucnjo3dmsw9leq.cloudeci1.ichunqiu.com/guestbook/index/init.html" target="_blank">留言板</a> | <a href="http://localhost/index.php?m=mobile">手机版</a></p>
+			<p>Powered By YzmCMS内容管理系统 © 2014-2020 袁志蒙工作室</p>
+			<p>Powered by <a href="http://www.yzmcms.com/" target="_blank">YzmCMS</a> © 2014-2020</p>
+		</div>
+	</div>
+  
+</body></html>

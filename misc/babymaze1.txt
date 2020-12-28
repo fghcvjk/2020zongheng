@@ -1,0 +1,20 @@
+root@ubuntu:~# nc 182.92.203.154 11001
+1. use "wasd" to move
+2. flag is hidden in 101*51 maze
+3. hurry up
+Are you ready?
+Please press any key to start.1
+#####################
+#*    # #       #   #
+##### # ####### ### #
+# # #     # # # # # #
+# # ##### # # # # # #
+# # # #       #     #
+# # # ####### ### # #
+# # #     #       # #
+# # ##### ##### ### #
+#                 #$#
+#####################
+>
+your win
+But you spent a lot of time, please be faster

@@ -1,0 +1,3 @@
+LSB have a deep secret
+
+PASS1 is 123456
